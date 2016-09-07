@@ -1,0 +1,28 @@
+{
+  "name": "github-yearly-contributions",
+  "version": "0.1.0",
+  "description": "A module which retrieves a user's 'commits this year' count.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andy-richardson/github-yearly-contributions.git"
+  },
+  "keywords": [
+    "github",
+    "commits",
+    "year",
+    "yearly"
+  ],
+  "author": "Andy Richardson <contact@andythedeveloper.com> (https://andythedeveloper.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andy-richardson/github-yearly-contributions/issues"
+  },
+  "homepage": "https://github.com/andy-richardson/github-yearly-contributions#readme",
+  "dependencies": {
+    "request": "^2.74.0"
+  }
+}

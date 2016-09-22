@@ -1,4 +1,5 @@
 const request = require('request');
+const maxCont = 6;
 
 const getCommits = function(username, timeout, callback){
     if(callback === undefined){
@@ -17,10 +18,10 @@ const getCommits = function(username, timeout, callback){
             throw new Error(err);
         }
 
-        // Get contribution count
-        let split = body.split(" ");
-        let index = split.indexOf('contributions') - 1;
-        callback(split[index]);
+        const numStart = body.search(/[0-9]+ contributions/);
+        const num = body.substr(numStart, maxCont).split(" ")[0];
+
+        callback(num);
     });
 };
 

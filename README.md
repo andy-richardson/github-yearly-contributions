@@ -12,7 +12,7 @@ npm install --save github-yearly-contributions
 ```
 const contributions = require('github-yearly-contributions');
 
-contributions('username', function(amount){
+contributions('username', function(err, amount){
   console.log('Contributions this year = ' + amount);  
 });
 ```

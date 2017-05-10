@@ -15,13 +15,13 @@ const getCommits = function(username, timeout, callback){
 
     request(opts, (err, response, body) => {
         if (err) {
-            throw new Error(err);
+            return callback(err);
         }
 
         const numStart = body.search(/[0-9]+ contributions/);
         const num = body.substr(numStart, maxCont).split(" ")[0];
 
-        callback(num);
+        callback(undefined, num);
     });
 };
 

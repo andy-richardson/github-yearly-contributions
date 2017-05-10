@@ -1,5 +1,5 @@
 # Github Yearly Contributions
-As Github's API does not provide a means to check the number of contributions for a given user within a year, this module works around that by scraping the information off a given users profile page.
+As Github's API does not provide a means to check the number of contributions within a year for a given user, this module works around that by scraping the information off said users profile page.
 
 ## Installation
 ```

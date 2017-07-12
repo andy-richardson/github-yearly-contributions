@@ -18,7 +18,7 @@ const getCommits = function(username, timeout, callback){
             return callback(err);
         }
 
-        const numStart = body.search(/[0-9]+ contributions/);
+        const numStart = body.search(/[0-9]*(,)?[0-9]+ contributions/);
         const num = body.substr(numStart, maxCont).split(" ")[0];
 
         callback(undefined, num);
